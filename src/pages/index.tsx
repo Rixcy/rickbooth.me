@@ -16,15 +16,15 @@ export default function Home() {
       rounded="lg"
       p="md"
       borderColor="purple"
-      className="max-w-5xl mx-auto sm:px-6 lg:px-8 mt-16"
+      className="max-w-5xl mx-auto sm:px-6 lg:px-8 lg:mt-16"
     >
-      <Box className="flex w-full items-center justify-between">
-        <Box className="mr-4">
-          <Box className="flex items-center">
-            <Heading size="2xl" color="white">
+      <Box className="flex w-full items-start md:items-center justify-between flex-row-reverse md:flex-row">
+        <Box className="mr-4 md:mr-0 md:ml-4 w-full">
+          <Box className="flex  md:items-center flex-col md:flex-row">
+            <Heading size="xl" color="white" className="whitespace-nowrap">
               Rick Booth
             </Heading>
-            <Box ml="md" className="text-3xl">
+            <Box className="text-3xl md:ml-4">
               <a
                 href="https://github.com/Rixcy"
                 target="_blank"
@@ -55,12 +55,14 @@ export default function Home() {
             Software Developer
           </Heading>
         </Box>
-        <Avatar
-          src="https://github.com/Rixcy.png"
-          title="Count Dracula"
-          borderVariant="large"
-          color="purple"
-        />
+        <Box className="mr-4 md:mr-0">
+          <Avatar
+            src="https://github.com/Rixcy.png"
+            title="Count Dracula"
+            borderVariant="large"
+            color="purple"
+          />
+        </Box>
       </Box>
       <Divider color="purple" my="md" />
       <Heading color="purpleCyan" size="md">
