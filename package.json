@@ -1,0 +1,75 @@
+{
+  "name": "nextjs-starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "build-storybook": "build-storybook --docs",
+    "check-todos": "leasot src/**/*.{js,jsx,ts,tsx}",
+    "commit": "git-cz",
+    "dev": "next dev",
+    "lint": "npx prettier --write .",
+    "sort": "sort-package-json",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{md,yml,json,babelrc,eslintrc,prettierrc}": [
+      "npx prettier --write"
+    ],
+    "**/*.{ts,tsx,js,jsx}": [
+      "npx prettier --write"
+    ],
+    "package.json": [
+      "npx sort-package-json"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-spring": "^8.0.27"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.3",
+    "@commitlint/config-conventional": "^8.3.3",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-essentials": "^6.0.22",
+    "@storybook/addon-links": "^6.0.22",
+    "@storybook/addons": "^6.0.22",
+    "@storybook/react": "^6.0.22",
+    "@storybook/theming": "^6.0.22",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0",
+    "leasot": "^11.4.0",
+    "lint-staged": "^10.4.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "sort-package-json": "^1.46.0",
+    "tailwindcss": "^1.8.10",
+    "typescript": "^4.0.3"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}
