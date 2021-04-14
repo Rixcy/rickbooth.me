@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="icons/site.webmanifest" />
         </Head>
-        <body className="bg-gray-900">
+        <body style={{ backgroundColor: '#22212C' }}>
           <Main />
           <NextScript />
         </body>
