@@ -1,10 +1,10 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: false,
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false,
   theme: {},
   variants: {},
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 }
