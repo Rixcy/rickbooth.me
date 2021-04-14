@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-starter",
-  "short_name": "nextjs-starter",
+  "name": "rickbooth.me",
+  "short_name": "rickbooth.me",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#9580FF",
+  "background_color": "#22212C",
   "display": "standalone"
 }
+

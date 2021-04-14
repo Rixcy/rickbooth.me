@@ -10,6 +10,7 @@
     "dev": "next dev",
     "lint": "npx prettier --write .",
     "sort": "sort-package-json",
+    "postinstall": "husky install && rm -rf .git/hooks && ln -s ../.husky .git/hooks",
     "start": "next start",
     "storybook": "start-storybook -p 6006"
   },
