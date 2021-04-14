@@ -1,10 +1,10 @@
-import { JobHistory } from 'components/JobHistory'
+import { About } from 'components/About'
 import { Layout } from 'components/Layout'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <Layout>
-      <JobHistory />
+      <About />
     </Layout>
   )
 }

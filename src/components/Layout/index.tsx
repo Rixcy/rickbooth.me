@@ -1,6 +1,5 @@
-import { Card, Divider, Heading, List, Text } from '@dracula/dracula-ui'
+import { Box, Card } from '@dracula/dracula-ui'
 import { Header } from 'components/Header'
-import { JobHistory } from 'components/JobHistory'
 import { Tabs } from 'components/Tabs'
 
 export type LayoutProps = {
@@ -19,7 +18,7 @@ export const Layout: React.VFC<LayoutProps> = (props) => {
     >
       <Header />
       <Tabs />
-      {children}
+      <Box px="sm">{children}</Box>
     </Card>
   )
 }

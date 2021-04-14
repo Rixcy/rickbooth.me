@@ -13,6 +13,11 @@ export const Tabs: React.VFC = () => {
     <DraculaTabs color="purple" mb="md">
       <li className={tabClasses('/')}>
         <Link href="/" passHref>
+          <a className="drac-tab-link drac-text">About</a>
+        </Link>
+      </li>
+      <li className={tabClasses('/job-history')}>
+        <Link href="/job-history" passHref>
           <a className="drac-tab-link drac-text">Job History</a>
         </Link>
       </li>

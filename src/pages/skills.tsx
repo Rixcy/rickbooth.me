@@ -1,7 +1,7 @@
 import { Heading, List, Text } from '@dracula/dracula-ui'
 import { Layout } from 'components/Layout'
 
-export default function Home() {
+export default function SkillsPage() {
   return (
     <Layout>
       <Heading color="purpleCyan" size="md">
