@@ -16,7 +16,7 @@ export default function Home() {
       rounded="lg"
       p="md"
       borderColor="purple"
-      className="max-w-5xl mx-auto sm:px-6 lg:px-8 lg:mt-16"
+      className="max-w-5xl mx-auto sm:px-6 lg:px-8 lg:my-16"
     >
       <Box className="flex w-full items-start md:items-center justify-between flex-row-reverse md:flex-row">
         <Box className="mr-4 md:mr-0 md:ml-4 w-full">
