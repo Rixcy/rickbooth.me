@@ -26,6 +26,11 @@ export const Tabs: React.VFC = () => {
           <a className="drac-tab-link drac-text">Skills</a>
         </Link>
       </li>
+      <li className={tabClasses('/version-history')}>
+        <Link href="/version-history" passHref>
+          <a className="drac-tab-link drac-text">Version History</a>
+        </Link>
+      </li>
     </DraculaTabs>
   )
 }
