@@ -36,7 +36,7 @@ export const Header: React.VFC = () => {
             </a>
           </Box>
         </Box>
-        <Heading size="lg" color="purpleCyan">
+        <Heading color="purpleCyan" className="text-lg md:text-2xl">
           Software Developer
         </Heading>
       </Box>
