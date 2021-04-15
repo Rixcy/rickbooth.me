@@ -6,7 +6,7 @@ export default function SkillsPage() {
       <Heading color="purpleCyan" size="md">
         Skills/Tools
       </Heading>
-      <List variant="unordered" color="purple">
+      <List variant="unordered" color="purple" className="pl-4 md:pl-6">
         {[
           'React',
           'TypeScript',

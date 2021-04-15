@@ -6,7 +6,7 @@ export const JobHistory: React.VFC = () => {
       <Heading color="purpleCyan" size="md">
         Job History
       </Heading>
-      <List variant="unordered" color="purple">
+      <List variant="unordered" color="purple" className="pl-4 md:pl-6">
         <li className="drac-text drac-text-white">
           <Text color="purpleCyan">Front-end Development Tech Lead</Text>{' '}
           <Text className="block md:inline-block">@ 9xb</Text>

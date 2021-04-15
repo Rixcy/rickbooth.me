@@ -8,8 +8,8 @@ export type CardsProps = {
 
 export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
   return (
-    <Box className="flex justify-around">
-      <div className="drac-box drac-rounded-2xl mr-4 mb-6 drac-bg-black-secondary w-2/5">
+    <Box className="flex flex-col lg:flex-row justify-around">
+      <div className="drac-box drac-rounded-2xl mr-4 mb-6 drac-bg-black-secondary w-full lg:w-2/5">
         <div className="drac-box drac-bg-pink-purple rounded-t-2xl w-full h-48 justify-center items-center flex">
           <Image
             src={showDarkVariants ? '/one-dark.png' : '/one-light.png'}
@@ -50,7 +50,7 @@ export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
           </p>
         </div>
       </div>
-      <div className="drac-box drac-rounded-2xl ml-4 mb-6 drac-bg-black-secondary w-2/5">
+      <div className="drac-box drac-rounded-2xl mr-4 mb-6 drac-bg-black-secondary w-full lg:w-2/5">
         <div className="drac-box drac-bg-purple-cyan rounded-t-2xl w-full h-48 justify-center items-center flex">
           <Image
             src={showDarkVariants ? '/two-dark.png' : '/two-light.png'}
