@@ -1,11 +1,10 @@
-import { Heading, List, Text } from '@dracula/dracula-ui'
+import { List, Text } from '@dracula/dracula-ui'
+import { Heading } from 'components/Heading'
 
 export const JobHistory: React.VFC = () => {
   return (
     <>
-      <Heading color="purpleCyan" size="md">
-        Job History
-      </Heading>
+      <Heading>Job History</Heading>
       <List variant="unordered" color="purple" className="pl-4 md:pl-6">
         <li className="drac-text drac-text-white">
           <Text color="purpleCyan">Front-end Development Tech Lead</Text>{' '}

@@ -1,5 +1,6 @@
 import { Box, Text } from '@dracula/dracula-ui'
 import { Cards } from 'components/Cards'
+import { Heading } from 'components/Heading'
 import { useState } from 'react'
 
 export default function VersionHistoryPage() {
@@ -8,9 +9,7 @@ export default function VersionHistoryPage() {
   return (
     <>
       <Box className="flex flex-col md:flex-row justify-between w-full">
-        <h2 className="drac-heading drac-heading-lg drac-text-white">
-          Version History
-        </h2>
+        <Heading>Version History</Heading>
         <Box className="mt-2 md:mt-0">
           <input
             id="dark"
