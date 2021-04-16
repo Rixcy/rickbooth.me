@@ -1,5 +1,6 @@
 import { Avatar, Box, Heading } from '@dracula/dracula-ui'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { getExternalLinkProps } from 'utils/external-link'
 
 export const Header: React.VFC = () => {
   return (
@@ -12,25 +13,22 @@ export const Header: React.VFC = () => {
           <Box className="text-3xl md:ml-4">
             <a
               href="https://github.com/Rixcy"
-              target="_blank"
-              rel="nofollow noreferrer"
               className="text-white mr-2"
+              {...getExternalLinkProps()}
             >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/rick-booth-480677119/"
-              target="_blank"
-              rel="nofollow noreferrer"
               className="text-white mr-2"
+              {...getExternalLinkProps()}
             >
               <FaLinkedin />
             </a>
             <a
               href="https://twitter.com/rixcydev"
-              target="_blank"
-              rel="nofollow noreferrer"
               className="text-white mr-2"
+              {...getExternalLinkProps()}
             >
               <FaTwitter />
             </a>

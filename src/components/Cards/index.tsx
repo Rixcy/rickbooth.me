@@ -1,6 +1,7 @@
 import { Box } from '@dracula/dracula-ui'
 import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
+import { getExternalLinkProps } from 'utils/external-link'
 
 export type CardsProps = {
   showDarkVariants: boolean
@@ -24,7 +25,7 @@ export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
               <a
                 href="https://one.rickbooth.me"
                 className="drac-text drac-text-white"
-                target="_blank"
+                {...getExternalLinkProps()}
               >
                 one.rickbooth.me
               </a>
@@ -32,7 +33,7 @@ export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
             <a
               href="https://github.com/Rixcy/rickbooth.me"
               className="text-white flex text-lg"
-              target="_blank"
+              {...getExternalLinkProps()}
             >
               <FaGithub size="20px" />
             </a>
@@ -65,7 +66,7 @@ export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
               <a
                 href="https://two.rickbooth.me"
                 className="drac-text drac-text-white"
-                target="_blank"
+                {...getExternalLinkProps()}
               >
                 two.rickbooth.me
               </a>
@@ -73,7 +74,7 @@ export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
             <a
               href="https://github.com/Rixcy/old.rickbooth.me"
               className="text-white flex text-lg"
-              target="_blank"
+              {...getExternalLinkProps()}
             >
               <FaGithub size="20px" />
             </a>

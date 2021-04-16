@@ -10,6 +10,14 @@ function App(props: AppProps) {
     <>
       <Head>
         <title>rickbooth.me</title>
+        <meta
+          name="description"
+          content="Software Developer from Skipton specialising in Web Development using modern technologies such as React and TypeScript."
+        />
+        <meta property="og:title" content="rickbooth.me" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://github.com/Rixcy.png" />
+        <meta property="og:locale" content="en_GB" />
       </Head>
       <Layout>
         <Component {...pageProps} />
