@@ -46,7 +46,8 @@ export const Header: React.VFC = () => {
       <Box className="mr-4 md:mr-0">
         <Avatar
           src="https://github.com/Rixcy.png"
-          title="Count Dracula"
+          alt="Rick Booth's Avatar"
+          title="Rick Booth"
           borderVariant="large"
           color="purple"
         />
