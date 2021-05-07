@@ -56,7 +56,7 @@ export const Tabs: React.VFC<TabsProps> = (props) => {
       <Box className="hidden md:block">
         <DraculaTabs color="purple" mb="md">
           {tabs.map((tab) => (
-            <li className={tabClasses(tab.link)}>
+            <li key={tab.link} className={tabClasses(tab.link)}>
               <Link href={tab.link} passHref>
                 <a className="drac-tab-link drac-text">{tab.text}</a>
               </Link>
