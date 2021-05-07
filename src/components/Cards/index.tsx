@@ -9,7 +9,7 @@ export type CardsProps = {
 
 export const Cards: React.VFC<CardsProps> = ({ showDarkVariants }) => {
   return (
-    <Box className="flex flex-col lg:flex-row justify-around">
+    <Box className="flex flex-col lg:flex-row justify-between">
       <div className="drac-box drac-rounded-2xl mr-4 mb-6 drac-bg-black-secondary w-full lg:w-2/5">
         <div className="drac-box drac-bg-pink-purple rounded-t-2xl w-full h-48 justify-center items-center flex">
           <Image

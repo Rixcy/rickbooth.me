@@ -10,7 +10,7 @@ export const Header: React.VFC = () => {
           <Heading size="xl" color="white" className="whitespace-nowrap">
             Rick Booth
           </Heading>
-          <Box className="text-3xl md:ml-4">
+          <Box className="text-2xl md:ml-4">
             <a
               href="https://github.com/Rixcy"
               className="text-white mr-2"

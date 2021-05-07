@@ -12,7 +12,7 @@ export const Layout: React.VFC<LayoutProps> = (props) => {
     <Card
       variant="subtle"
       rounded="lg"
-      borderColor="purple"
+      color="purple"
       className="max-w-5xl mx-auto sm:px-6 lg:px-8 lg:my-16 py-8 px-6 md:p-8"
     >
       <Header />
