@@ -7,7 +7,12 @@ export const Header: React.VFC = () => {
     <Box className="flex w-full items-start md:items-center justify-between flex-row-reverse md:flex-row">
       <Box className="mr-4 md:mr-0 md:ml-4 w-full">
         <Box className="flex  md:items-center flex-col md:flex-row">
-          <Heading size="xl" color="white" className="whitespace-nowrap">
+          <Heading
+            as="h1"
+            size="xl"
+            color="white"
+            className="whitespace-nowrap"
+          >
             Rick Booth
           </Heading>
           <Box className="text-2xl md:ml-4">
