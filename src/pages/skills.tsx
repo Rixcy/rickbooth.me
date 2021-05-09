@@ -1,4 +1,4 @@
-import { Badge, List, Text } from '@dracula/dracula-ui'
+import { Badge } from '@dracula/dracula-ui'
 import { Heading } from 'components/Heading'
 
 export default function SkillsPage() {

@@ -1,10 +1,4 @@
-import {
-  Box,
-  Divider,
-  Heading,
-  Select,
-  Tabs as DraculaTabs,
-} from '@dracula/dracula-ui'
+import { Box, Divider, Heading, Tabs as DraculaTabs } from '@dracula/dracula-ui'
 import { useRouter } from 'next/dist/client/router'
 import Link from 'next/link'
 import cx from 'classnames'
