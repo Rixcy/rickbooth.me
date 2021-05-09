@@ -1,134 +1,84 @@
 import { Anchor, List, Text } from '@dracula/dracula-ui'
 import { Heading } from 'components/Heading'
 
-export const JobHistory: React.VFC = () => {
-  const externalProps = {
-    rel: 'nofollow noreferrer',
-    target: '_blank',
-  }
+type JobHistoryItem = {
+  jobTitle: string
+  link: string
+  companyName: string
+}
 
+const jobHistory: JobHistoryItem[] = [
+  {
+    jobTitle: 'Front-end Development Tech Lead',
+    companyName: '9xb',
+    link: 'https://www.9xb.com',
+  },
+  {
+    jobTitle: 'Software Developer',
+    companyName: 'Intelligence Fusion',
+    link: 'https://www.intelligencefusion.co.uk',
+  },
+  {
+    jobTitle: 'Head of Front-end Development',
+    companyName: '9xb',
+    link: 'https://www.9xb.com',
+  },
+  {
+    jobTitle: 'Web Developer',
+    companyName: '9xb',
+    link: 'https://www.9xb.com',
+  },
+  {
+    jobTitle: 'Web Developer',
+    companyName: 'Awaze',
+    link: 'https://www.awaze.co.uk',
+  },
+  {
+    jobTitle: 'Web Developer',
+    companyName: 'Lead Tech',
+    link: 'https://www.lead-tech.co.uk',
+  },
+  {
+    jobTitle: 'Software Developer',
+    companyName: 'CPOMS Systems Ltd',
+    link: 'https://www.cpoms.co.uk',
+  },
+  {
+    jobTitle: 'IT Support Technician',
+    companyName: 'Meritec Limited',
+    link: 'https://www.meritec.co.uk',
+  },
+  {
+    jobTitle: 'Analytical Chemist',
+    companyName: 'Keighley Laboratories Limited',
+    link: 'https://www.keighleylabs.co.uk',
+  },
+]
+
+export const JobHistory: React.VFC = () => {
   return (
     <>
       <Heading>Job History</Heading>
       <List variant="unordered" color="purple" className="pl-4 md:pl-6">
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Front-end Development Tech Lead</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.9xb.com"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              9xb
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Software Developer</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.intelligencefusion.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              Intelligence Fusion
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Head of Front-end Development</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.9xb.com"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              9xb
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Web Developer</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.9xb.com"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              9xb
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Web Developer</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.awaze.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              Awaze
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Web Developer</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.lead-tech.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              Lead Tech
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Software Developer</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.cpoms.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              CPOMS Systems Ltd
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">IT Support Technician</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.meritec.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              Meritec Limited
-            </Anchor>
-          </Text>
-        </li>
-        <li className="drac-text drac-text-white">
-          <Text color="purpleCyan">Analytical Chemist</Text>{' '}
-          <Text className="block md:inline-block">
-            @{' '}
-            <Anchor
-              href="https://www.keighleylabs.co.uk"
-              {...externalProps}
-              hoverColor="yellowPink"
-            >
-              Keighley Laboratories Limited
-            </Anchor>
-          </Text>
-        </li>
+        {jobHistory.map((job) => (
+          <JobHistoryItem key={job.jobTitle} {...job} />
+        ))}
       </List>
     </>
+  )
+}
+
+const JobHistoryItem: React.VFC<JobHistoryItem> = (props) => {
+  const { companyName, link, jobTitle } = props
+  return (
+    <li className="drac-text drac-text-white">
+      <Text color="purpleCyan">{jobTitle}</Text>{' '}
+      <Text className="block md:inline-block">
+        @{' '}
+        <Anchor href={link} hoverColor="yellowPink" isExternal>
+          {companyName}
+        </Anchor>
+      </Text>
+    </li>
   )
 }
