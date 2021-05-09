@@ -1458,10 +1458,10 @@
   dependencies:
     chalk "^4.0.0"
 
-"@dracula/dracula-ui@^0.7.8":
-  version "0.7.8"
-  resolved "https://npm.pkg.github.com/download/@dracula/dracula-ui/0.7.8/8dc2c9dd8eb62c0d6017ed28d41af185b90433f0548251c38ba46b767825b6db#f45462d440734f7968e20a0f876f0eacc3011f16"
-  integrity sha512-9083hjFwX6REx6+1d4xC8RBGQy6w20HMFufc8FcJ8QPLvryPDLYt0G2YvRuS0LnABArc7H1hh8dyfo1I1pMPwQ==
+"@dracula/dracula-ui@^0.7.9":
+  version "0.7.9"
+  resolved "https://npm.pkg.github.com/download/@dracula/dracula-ui/0.7.9/39a475b951a543e24ebba8fb2d530a9239ba39b32555b3f29c4d6f8428cc43f9#2d15752996a2c216bfd422a0d68485228982c3bd"
+  integrity sha512-PrVi1Mdm3nuGcgB3Li5qSpkn5b3yPU8tkH6ma7n7GOHvxlZFaDdjORPWnOf+JyJXh689X82IqjNv7PjUlHbQ3Q==
   dependencies:
     classnames "^2.2.6"
     lodash "^4.17.20"
